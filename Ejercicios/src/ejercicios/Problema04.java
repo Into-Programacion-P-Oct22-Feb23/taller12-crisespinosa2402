@@ -16,6 +16,25 @@ public class Problema04 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        double[] bases = {100, 90, 80, 70, 60};
+        double[] potencias = {2, 3, 2, 2, 1};
+        double[] resultado = new double[5];
+
+        for (int i = 0; i < bases.length; i++) {
+            resultado[i] = potencia(bases[i], potencias[i]);
+        }
+        for (int i = 0; i < bases.length; i++) {
+            System.out.printf("%.0f\n", resultado[i]);
+        }
     }
-    
+
+    public static double potencia(double a, double b) {
+
+        if (b == 1) {
+            return a;
+        } else {
+            return a * potencia(a, b - 1);
+        }
+    }
+
 }

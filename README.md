@@ -1,5 +1,7 @@
 # Taller12
 
+Cristian Espinosa-Alex Sanchez
+
 ## Problemáticas
 
 #### Fin respuesta
